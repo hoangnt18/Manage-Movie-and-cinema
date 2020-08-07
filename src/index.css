@@ -5,9 +5,255 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "SF Text Regular", sans-serif;
+  position: relative;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* .active{
+  background-color: white;
+  color: red !important;
+} */
+
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  /* border: 1px solid rgba(163, 158, 158, 0.411); */
+  /* padding-top: 40px; */
 }
+
+header .navbar .navbar-brand img , .admin_img img {
+  width: 100px;
+  height: 100px;
+  margin-right: 250px;
+  padding-bottom: 40px;
+}
+
+header .navbar .nav-item img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 200px;
+} 
+
+header .navbar .nav-item {
+  margin: 5px;
+}
+
+header .navbar .nav-item .nav-link .custom-select {
+  border: none;
+  padding-bottom: 15px;
+}
+
+header .navbar .nav-item .nav-link i {
+  color: #9b9b9b;
+  font-size: 25px;
+}
+
+header .navbar .collapse .nav-item a {
+  color: black;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .navbar .collapse .nav-item a:hover {
+  color: red;
+  transition: 0.5s;
+} 
+
+ header .navbar .collapse .nav-item span {
+  color: #9b9b9b;
+}
+
+header .navbar .collapse .nav-item .input-group option {
+  color: #9b9b9b;
+}
+
+
+/* Carousel */
+
+.tixCarousel .carousel li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+
+    background-color: yellow;
+}
+
+.tixCarousel .carousel-inner .carousel-item img  {
+    width: 100%;
+    height: 500px;
+}
+
+.tixCarousel .carousel a {
+    color: black;
+    font-size: 40px;
+}
+
+.carousel-item i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid black;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+}
+
+.carousel-item i:hover{
+    
+    color: white;
+    transform: scale(1.2);
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.637);
+    opacity: 1;
+    
+}
+
+.chooseTime {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 575px;
+    left: 150px;
+    background-color: white;
+    height: 80px;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+}
+
+.chooseTime_item {
+    transform: translateX(100px);
+    margin: 0 10px;
+}
+
+.chooseTime_item .btn-light {
+    background-color: white;
+}
+
+.chooseTime_item .btn-light {
+    margin: 10px 20px;
+    padding-left: 10px;
+}
+
+.chooseTime_item1 button {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.dropdown-toggle::after {
+    color: rgba(61, 58, 58, 0.637);
+}
+
+/* showTime */
+.showTime_items img {
+  width: 250px;
+  height: 300px;
+  
+}
+
+.showTime_items {
+  margin-left: 20px;
+}
+
+
+.showTime_items{
+  margin-bottom: 20px;
+
+  
+}
+
+.showTime_button button{
+  opacity: 0;
+  transition: all linear 0.5s;
+}
+
+.showTime_items:hover .showTime_button button{
+  opacity: 1;
+}
+
+
+
+
+.showTime_items .showTime_text {
+  margin-top: 8px;
+  text-align: center;
+  color:black;
+  
+}
+
+/* listMovie_dangChieu */
+.listMovie_dangChieu {
+  height: 900px;
+  overflow: auto;
+  width: 100%;
+}
+
+
+/* detailMovie_items */
+.detailMovie_items img{
+  width: 300px;
+  height: 400px;
+}
+
+/* LichChieu */
+.Cinema table thead td img ,.listLogo img{
+  width: 100px;
+  height: 100px;
+  margin:20px;
+}
+
+
+
+
+.active1{
+  background-color: rgba(241, 16, 16, 0.623);
+  color: red !important;
+  
+}
+
+
+/* .listRap .listRap_items  table{
+  display: block;
+  height: 600px !important;
+ 
+} */
+
+
+.listCinema{
+  height: 700px;
+  overflow: auto;
+}
+
+.listSuatChieu{
+  height: 800px;
+  overflow: auto;
+}
+
+.showTime_items img{
+  width: 100%;
+}
+
+.adminMovie img{
+  width: 100%;
+  height: 300px;
+}
+
